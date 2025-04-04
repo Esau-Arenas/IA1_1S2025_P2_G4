@@ -32,7 +32,7 @@
         <div class="navbar-content">
             <h1 class="navbar-title">TurisAR</h1>
             <ul class="navbar-links">
-                <li><a href="#">LOGIN</a></li>
+                <li><button class="button" onclick="openModal()">LOGIN</button></li>
             </ul>
         </div>
     </nav>
@@ -47,6 +47,16 @@
         <a-entity id="targets-container"></a-entity>
 
     </a-scene>
+
+    <div class="modal" id="adminModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <input type="text" placeholder="Usuario" id="user">
+            <input type="password" placeholder="Contraseña" id="password">
+            <button class="button" onclick="login()">Ingresar</button>
+        </div>
+    </div>
 
     <script src="js/index.js"></script>
 

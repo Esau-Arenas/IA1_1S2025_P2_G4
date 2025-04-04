@@ -103,3 +103,37 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+function openModal() {
+    document.getElementById('adminModal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('adminModal').style.display = 'none';
+}
+
+function showAlert(message, isSuccess) {
+    var alertBox = document.getElementById('alert');
+    alertBox.textContent = message;
+    alertBox.className = 'alert ' + (isSuccess ? 'success' : '');
+    alertBox.style.display = 'block';
+}
+
+function login() {
+    var user = document.getElementById('user').value;
+    var password = document.getElementById('password').value;
+    if (user === 'admin' && password === 'admin') {
+        document.getElementById('user').value = '';
+        document.getElementById('password').value = '';
+        showAlert('Inicio de sesión exitoso', true);
+        setTimeout(function() {
+        window.location.href = 'views/admin.html';
+        }
+        , 2000);
+        closeModal();
+    } else {
+        document.getElementById('user').value = '';
+        document.getElementById('password').value = '';
+        showAlert('Credenciales incorrectas', false);
+    }
+}
