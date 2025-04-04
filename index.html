@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <title>Proyecto 2 - TurisAR</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<div id="info-display" class="info-panel"></div>
+<div id="info-container" style="display: none;">
+    
+    <h2 id="titulo-texto"></h2>
+    <iframe id="video-frame"></iframe>
+    
+    <div id="info-content">
+        <p id="descripcion-texto"></p>
+        <div id="botones-container">
+            <button class="button" id="btn1">Filtro AR</button>
+            <button class="button" id="btn2">Web externa</button>
+            <button class="button" id="btn3">Localización</button>
+        </div>
+    </div>
+</div>
+
+<body style="margin: 0px; overflow: hidden;">
+    <nav class="navbar">
+        <div class="navbar-content">
+            <h1 class="navbar-title">TurisAR</h1>
+            <ul class="navbar-links">
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <a-scene mindar-image="imageTargetSrc: assets/targets.mind;" color-space="sRGB"
+        renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false">
+
+        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+        <!-- Contenedor dinámico donde se agregarán los targets -->
+        <a-entity id="targets-container"></a-entity>
+
+    </a-scene>
+
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
