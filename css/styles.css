@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(145deg, #1c1f26, #2a2d34);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #d1d5db;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+}
+
+.card {
+    background-color: #2f343d;
+    color: #e0e0e0;
+    border: 1px solid #3d434d;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    background-color: #3d434d;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 16px 16px 0 0;
+    text-align: center;
+}
+
+.form-control {
+    background-color: #2a2d34;
+    color: #e0e0e0;
+    border: 1px solid #50565f;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    background-color: #333840;
+    border-color: #3a6ea5;
+    box-shadow: none;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #3a6ea5;
+    border-color: #3a6ea5;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #325d8c;
+    border-color: #325d8c;
+}
+
+.btn-secondary {
+    background-color: #556b2f;
+    border-color: #556b2f;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #455926;
+    border-color: #455926;
+}
+
+.alert {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
