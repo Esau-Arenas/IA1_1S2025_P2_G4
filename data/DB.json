@@ -61,7 +61,7 @@
       "imagen": "../images/m7.jpg",
       "video": "https://www.youtube.com/watch?v=PAIRwgpAtX4",
       "url_info": "https://www.nationalgeographicla.com/viajes/2018/02/taj-mahal-una-tumba-colosal-que-es-monumento-al-amor",
-      "url_mapa": "https://maps.app.goo.gl/qzZ9qEcsYrgxYsca8"
+      "url_mapa": "https://maps.app.goo.gl/ytmwx8ict6TYiimt5"
     },
     {
       "id": 7,
@@ -69,8 +69,8 @@
       "descripcion": "La catedral está ubicada en la ciudad colonial de Antigua Guatemala, conocida por su arquitectura barroca y su importancia histórica.",
       "imagen": "../images/m8.jpg",
       "video": "https://www.youtube.com/watch?v=4iJQ7jWHQJs",
-      "url_info": "https://www.sic.gov.gt/sites/default/files/documents/2021-04/Catedral_de_Antigua_Guatemala.pdf",
-      "url_mapa": "https://maps.app.goo.gl/HV3L5kNc5vBz7Vgb9"
+      "url_info": "https://es.wikipedia.org/wiki/Catedral_de_Santiago_Ap%C3%B3stol_(Santiago_de_los_Caballeros)",
+      "url_mapa": "https://maps.app.goo.gl/PFxaJCGdFSLYGbUJ9"
     },
     {
       "id": 8,
@@ -78,8 +78,8 @@
       "descripcion": "Es un complejo natural de piscinas de agua turquesa formadas por el río Cahabón, rodeado de selva virgen y montañas.",
       "imagen": "../images/m9.jpg",
       "video": "https://www.youtube.com/watch?v=UF2iXC59paQ",
-      "url_info": "https://www.guatemala.com/guias/aventura/parque-nacional-semuc-champey/",
-      "url_mapa": "https://maps.app.goo.gl/smckVv8FmX52"
+      "url_info": "https://aprende.guatemala.com/historia/geografia/parque-nacional-semuc-champey-en-guatemala/",
+      "url_mapa": "https://maps.app.goo.gl/Rfm8Pox8JrEFKA3u9"
     },
     {
       "id": 9,
@@ -87,8 +87,8 @@
       "descripcion": "Uno de los volcanes más activos de Guatemala, que ofrece una impresionante vista de sus erupciones regulares.",
       "imagen": "../images/m10.jpg",
       "video": "https://www.youtube.com/watch?v=LzPXm2pq5us",
-      "url_info": "https://www.guatemala.com/guias/aventura/volcan-de-fuego/",
-      "url_mapa": "https://maps.app.goo.gl/nf1X3dBqkAsz2dBTA"
+      "url_info": "https://es.wikipedia.org/wiki/Volc%C3%A1n_de_Fuego",
+      "url_mapa": "https://maps.app.goo.gl/TQTqqqzEKTSzoh8z6"
     },
     {
       "id": 10,
@@ -96,8 +96,8 @@
       "descripcion": "Una hermosa laguna de agua verde ubicada en el corazón de la selva de Alta Verapaz, rodeada de biodiversidad.",
       "imagen": "../images/m11.jpg",
       "video": "https://www.youtube.com/watch?v=9EZ2-uDepBA",
-      "url_info": "https://aprende.guatemala.com/historia/geografia/laguna-lachua-alta-verapaz/",
-      "url_mapa": "https://maps.app.goo.gl/h1df7Q6MUpw5z8mT6"
+      "url_info": "https://es.wikipedia.org/wiki/Laguna_Lachu%C3%A1",
+      "url_mapa": "https://maps.app.goo.gl/fT4y4nKxruxiXAYY7"
     },
     {
       "id": 11,
@@ -105,8 +105,8 @@
       "descripcion": "Uno de los volcanes más activos de Guatemala, conocido por sus frecuentes erupciones y las vistas impresionantes desde la cima.",
       "imagen": "../images/m12.jpg",
       "video": "https://www.youtube.com/watch?v=lf42Ht1nvCk",
-      "url_info": "https://www.guatemala.com/guias/aventura/volcan-pacaya/",
-      "url_mapa": "https://maps.app.goo.gl/BFwQz7qk2fJZpZET7"
+      "url_info": "https://es.wikipedia.org/wiki/Volc%C3%A1n_de_Pacaya",
+      "url_mapa": "https://maps.app.goo.gl/735uZNfu2ujchEoC8"
     },
     {
       "id": 12,
@@ -114,8 +114,8 @@
       "descripcion": "Reserva natural ubicada en la Sierra de las Minas, hogar del ave nacional de Guatemala, el quetzal.",
       "imagen": "../images/m13.jpg",
       "video": "https://www.youtube.com/watch?v=LDxqosCqGqs&t=521s",
-      "url_info": "https://www.guatemala.com/guias/aventura/biotopo-del-quetzal/",
-      "url_mapa": "https://maps.app.goo.gl/2v1x7qk2fJZpZET7"
+      "url_info": "https://es.wikipedia.org/wiki/Biotopo_del_Quetzal",
+      "url_mapa": "https://maps.app.goo.gl/7hCj9sTr6ztN1A4G7"
     },
     {
       "id": 13,
@@ -123,8 +123,8 @@
       "descripcion": "Sitio arqueológico maya ubicado en Petén, conocido por sus impresionantes pirámides y su proximidad a Tikal.",
       "imagen": "../images/m14.jpg",
       "video": "https://www.youtube.com/watch?v=xCuc-5sqaic",
-      "url_info": "https://www.guatemala.com/guias/historia/ruinas-de-uaxactun-peten/",
-      "url_mapa": "https://maps.app.goo.gl/9oXpc54D6aXwRmjm8"
+      "url_info": "https://aprende.guatemala.com/cultura-guatemalteca/patrimonios/sitio-arqueologico-uaxactun-peten/",
+      "url_mapa": "https://maps.app.goo.gl/JG42pRyFiW4Jx7Ro8"
     }
   ]
 }
