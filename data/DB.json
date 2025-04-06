@@ -4,7 +4,7 @@
       "id": 0,
       "nombre": "Gran Muralla China",
       "descripcion": "Serie de fortificaciones hechas de piedra, ladrillo y tierra, construidas para proteger las fronteras del Imperio Chino.",
-      "imagen": "./images/7_MurallaChina.jpg",
+      "imagen": "../images/m1.jpg",
       "video": "https://www.youtube.com/watch?v=yFTDHgZbd4Q",
       "url_info": "https://historia.nationalgeographic.com.es/a/gran-muralla-china-mayor-obra-ingenieria-mundo_8272",
       "url_mapa": "https://maps.app.goo.gl/ojCkJdB1ChXzwapn7"
@@ -13,7 +13,7 @@
       "id": 1,
       "nombre": "Petra",
       "descripcion": "Ciudad antigua esculpida en roca arenisca rosa, capital del reino nabateo en Jordania.",
-      "imagen": "./images/8_Petra.jpg",
+      "imagen": "../images/m2.jpg",
       "video": "https://www.youtube.com/watch?v=zqvAwRVb4Dg",
       "url_info": "https://viajes.nationalgeographic.com.es/a/petra-que-ver-joya-nabatea-jordania-80-todavia-oculto_13675",
       "url_mapa": "https://maps.app.goo.gl/JQCHb8UHS6YVE9RS6"
@@ -22,7 +22,7 @@
       "id": 2,
       "nombre": "Cristo Redentor",
       "descripcion": "Estatua de Jesús de 30 metros de altura, ubicada en Río de Janeiro, Brasil.",
-      "imagen": "./images/9_Cristo.jpg",
+      "imagen": "../images/m3.jpg",
       "video": "https://www.youtube.com/watch?v=p9roL8ETcfo",
       "url_info": "https://www.nationalgeographicla.com/historia/2023/07/regalo-de-francia-conoce-esta-y-otras-curiosidades-sobre-el-cristo-redentor",
       "url_mapa": "https://maps.app.goo.gl/KXJytBthEc8dB8M56"
@@ -31,7 +31,7 @@
       "id": 3,
       "nombre": "Machu Picchu",
       "descripcion": "Ciudad inca ubicada en los Andes peruanos, construida en el siglo XV.",
-      "imagen": "./images/10_MachuPicchu.jpg",
+      "imagen": "../images/m4.jpg",
       "video": "https://www.youtube.com/watch?v=DBKwTumVFdg",
       "url_info": "https://viajes.nationalgeographic.com.es/z/machu-picchu",
       "url_mapa": "https://maps.app.goo.gl/6L9rNQUD4uipqcXG7"
@@ -40,7 +40,7 @@
       "id": 4,
       "nombre": "Isla de Pascua",
       "descripcion": "Ubicada en Chile, es uno de los lugares habitados más remotos de la Tierra y es famosa por el millar de enigmáticas e imponentes estatuas que salpican su paisaje, llamadas moai.",
-      "imagen": "./images/11_IslaPascua.jpg",
+      "imagen": "../images/m5.jpg",
       "video": "https://www.youtube.com/watch?v=BAytVSGDf2M",
       "url_info": "https://www.nationalgeographic.es/historia/isla-de-pascua-mitos-leyendas-origen",
       "url_mapa": "https://maps.app.goo.gl/FrvFRa7XgvVNKhK9A"
@@ -49,7 +49,7 @@
       "id": 5,
       "nombre": "Coliseo Romano",
       "descripcion": "Anfiteatro construido en Roma en el siglo I d.C., símbolo del Imperio Romano.",
-      "imagen": "./images/12_ColiseoRomano.jpg",
+      "imagen": "../images/m6.jpg",
       "video": "https://www.youtube.com/watch?v=cn3xT0OUIyw",
       "url_info": "https://www.enroma.com/coliseo-roma/",
       "url_mapa": "https://maps.app.goo.gl/ZFxHN1NkMdGvZHv18"
@@ -58,7 +58,7 @@
       "id": 6,
       "nombre": "Taj Mahal",
       "descripcion": "Mausoleo de mármol blanco en Agra, India, construido por el emperador Shah Jahan.",
-      "imagen": "./images/13_TajMahal.jpg",
+      "imagen": "../images/m7.jpg",
       "video": "https://www.youtube.com/watch?v=PAIRwgpAtX4",
       "url_info": "https://www.nationalgeographicla.com/viajes/2018/02/taj-mahal-una-tumba-colosal-que-es-monumento-al-amor",
       "url_mapa": "https://maps.app.goo.gl/qzZ9qEcsYrgxYsca8"
@@ -67,7 +67,7 @@
       "id": 7,
       "nombre": "Catedral de Santiago de los Caballeros",
       "descripcion": "La catedral está ubicada en la ciudad colonial de Antigua Guatemala, conocida por su arquitectura barroca y su importancia histórica.",
-      "imagen": "./images/0_CatedralSantiago.jpg",
+      "imagen": "../images/m8.jpg",
       "video": "https://www.youtube.com/watch?v=4iJQ7jWHQJs",
       "url_info": "https://www.sic.gov.gt/sites/default/files/documents/2021-04/Catedral_de_Antigua_Guatemala.pdf",
       "url_mapa": "https://maps.app.goo.gl/HV3L5kNc5vBz7Vgb9"
@@ -76,7 +76,7 @@
       "id": 8,
       "nombre": "Parque Nacional Semuc Champey",
       "descripcion": "Es un complejo natural de piscinas de agua turquesa formadas por el río Cahabón, rodeado de selva virgen y montañas.",
-      "imagen": "./images/1_SemucChampey.jpg",
+      "imagen": "../images/m9.jpg",
       "video": "https://www.youtube.com/watch?v=UF2iXC59paQ",
       "url_info": "https://www.guatemala.com/guias/aventura/parque-nacional-semuc-champey/",
       "url_mapa": "https://maps.app.goo.gl/smckVv8FmX52"
@@ -85,7 +85,7 @@
       "id": 9,
       "nombre": "Volcán de Fuego",
       "descripcion": "Uno de los volcanes más activos de Guatemala, que ofrece una impresionante vista de sus erupciones regulares.",
-      "imagen": "./images/2_VolcanFuego.jpg",
+      "imagen": "../images/m10.jpg",
       "video": "https://www.youtube.com/watch?v=LzPXm2pq5us",
       "url_info": "https://www.guatemala.com/guias/aventura/volcan-de-fuego/",
       "url_mapa": "https://maps.app.goo.gl/nf1X3dBqkAsz2dBTA"
@@ -94,7 +94,7 @@
       "id": 10,
       "nombre": "Laguna Lachuá",
       "descripcion": "Una hermosa laguna de agua verde ubicada en el corazón de la selva de Alta Verapaz, rodeada de biodiversidad.",
-      "imagen": "./images/3_LagunaLachua.jpg",
+      "imagen": "../images/m11.jpg",
       "video": "https://www.youtube.com/watch?v=9EZ2-uDepBA",
       "url_info": "https://aprende.guatemala.com/historia/geografia/laguna-lachua-alta-verapaz/",
       "url_mapa": "https://maps.app.goo.gl/h1df7Q6MUpw5z8mT6"
@@ -103,7 +103,7 @@
       "id": 11,
       "nombre": "Volcán Pacaya",
       "descripcion": "Uno de los volcanes más activos de Guatemala, conocido por sus frecuentes erupciones y las vistas impresionantes desde la cima.",
-      "imagen": "./images/4_VolcanPacaya.jpg",
+      "imagen": "../images/m12.jpg",
       "video": "https://www.youtube.com/watch?v=lf42Ht1nvCk",
       "url_info": "https://www.guatemala.com/guias/aventura/volcan-pacaya/",
       "url_mapa": "https://maps.app.goo.gl/BFwQz7qk2fJZpZET7"
@@ -112,7 +112,7 @@
       "id": 12,
       "nombre": "Biotopo del Quetzal",
       "descripcion": "Reserva natural ubicada en la Sierra de las Minas, hogar del ave nacional de Guatemala, el quetzal.",
-      "imagen": "./images/5_CoffeeTourAntigua.jpg",
+      "imagen": "../images/m13.jpg",
       "video": "https://www.youtube.com/watch?v=LDxqosCqGqs&t=521s",
       "url_info": "https://www.guatemala.com/guias/aventura/biotopo-del-quetzal/",
       "url_mapa": "https://maps.app.goo.gl/2v1x7qk2fJZpZET7"
@@ -121,7 +121,7 @@
       "id": 13,
       "nombre": "Ruinas de Uaxactún",
       "descripcion": "Sitio arqueológico maya ubicado en Petén, conocido por sus impresionantes pirámides y su proximidad a Tikal.",
-      "imagen": "./images/6_Uaxactun.jpg",
+      "imagen": "../images/m14.jpg",
       "video": "https://www.youtube.com/watch?v=xCuc-5sqaic",
       "url_info": "https://www.guatemala.com/guias/historia/ruinas-de-uaxactun-peten/",
       "url_mapa": "https://maps.app.goo.gl/9oXpc54D6aXwRmjm8"

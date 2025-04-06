@@ -1,0 +1,94 @@
+{
+  "filtros":{
+    "biotopo": {
+      "id": 12,
+      "path": "../filtros/filtro_biotopo.png",
+      "size": [1.5, 0.8],
+      "position": [0, -0.3, -0.3],
+      "displayName": "Biotopo"
+    },
+    "catedral": {
+      "id": 7,
+      "path": "../filtros/filtro_catedral.png",
+      "size": [1.1, 1],
+      "position": [0, -0.2, -0.3],
+      "displayName": "Catedral"
+    },
+    "lagunalachua": {
+      "id": 10,
+      "path": "../filtros/filtro_lagunalachua.png",
+      "size": [1.4, 0.5],
+      "position": [0, -0.1, -0.3],
+      "displayName": "Laguna de la Chua"
+    },
+    "semuc": {
+      "id": 8,
+      "path": "../filtros/filtro_semuc.png",
+      "size": [1.5, 1.2],
+      "position": [0, -0.2, 0],
+      "displayName": "Semuc Champey"
+    },
+    "uaxactun": {
+      "id": 13,
+      "path": "../filtros/filtro_uaxactun.png",
+      "size": [1.5, 0.8],
+      "position": [0, -0.3, -0.3],
+      "displayName": "Uaxactún"
+    },
+    "volcanpacaya": {
+      "id": 11,
+      "path": "../filtros/filtro_volcanpacaya.png",
+      "size": [1.1, 1],
+      "position": [0, -0.2, -0.3],
+      "displayName": "Volcán Pacaya"
+    },"volvanfuego": {
+      "id": 9,
+      "path": "../filtros/filtro_volcanfuego.png",
+      "size": [1.4, 0.5],
+      "position": [0, -0.1, -0.3],
+      "displayName": "Volcán de Fuego"
+    },"muralla": {
+      "id": 0,
+      "path": "../filtros/filtro_muralla.png",
+      "size": [1.5, 0.8],
+      "position": [0, -0.3, -0.3],
+      "displayName": "Mirador"
+    },"petra": {
+      "id": 1,
+      "path": "../filtros/filtro_petra.png",
+      "size": [1.5, 0.8],
+      "position": [0, -0.3, -0.3],
+      "displayName": "Petra"
+    },"cristo redentor": {
+      "id": 2,
+      "path": "../filtros/filtro_cristo.png",
+      "size": [1.5, 0.8],
+      "position": [0, -0.3, -0.3],
+      "displayName": "cristo"
+    },"Machu": {
+      "id": 3,
+      "path": "../filtros/filtro_machu.png",
+      "size": [1.5, 0.8],
+      "position": [0, -0.3, -0.3],
+      "displayName": "machu picchu"
+    },"pascua": {
+      "id": 4,
+      "path": "../filtros/filtro_pascua.png",
+      "size": [1.5, 0.8],
+      "position": [0, -0.3, -0.3],
+      "displayName": "isla de pascua"
+    },"coliseo": {
+      "id": 5,
+      "path": "../filtros/filtro_coliceo.png",
+      "size": [1.5, 0.8],
+      "position": [0, -0.3, -0.3],
+      "displayName": "coliseo romano"
+    },"Taj mahal": {
+      "id": 6,
+      "path": "../filtros/filtro_taj.png",
+      "size": [1.5, 0.8],
+      "position": [0, -0.3, -0.3],
+      "displayName": "taj mahal"
+    }
+  }
+}

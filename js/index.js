@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }));
 
             // Redirigir a filtro.html
-            window.location.href = './Filtros/filtro.html';
+            window.location.href = '../views/filtro.html';
         }
     });
 

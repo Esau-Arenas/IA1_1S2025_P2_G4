@@ -1,10 +1,246 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Admin - TurisAR</title>
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8" />
+  <title>Admin - Gestión AR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Import Map -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three":             "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/":     "https://unpkg.com/three@0.160.0/examples/jsm/",
+      "mindar-face-three": "https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-three.prod.js"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="../css/admin.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="admin-header text-center py-3 bg-dark text-white">
+    <h1>Administración AR - Panel Admin</h1>
+  </header>
+
+  <main class="container my-4">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="adminTabs" role="tablist">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          id="ar-tab"
+          data-bs-toggle="tab"
+          href="#tab-ar"
+          >Visor AR</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="places-tab"
+          data-bs-toggle="tab"
+          href="#tab-places"
+          >Lugares</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="filters-tab"
+          data-bs-toggle="tab"
+          href="#tab-filters"
+          >Filtros</a
+        >
+      </li>
+    </ul>
+
+    <div class="tab-content pt-3">
+      <!-- Vista AR -->
+      <div class="tab-pane fade show active" id="tab-ar">
+        <div class="text-center mb-3">
+          <button id="toggle-filters-btn" class="btn btn-secondary">
+            Ver/Ocultar filtros
+          </button>
+        </div>
+        <div id="ar-container" style="position: relative;">
+          <!-- Aquí inyecta JS el <video> y el <canvas> de AR -->
+          <!-- Selector de filtros dentro del contenedor AR -->
+          <div id="filter-selector" style="
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+            z-index: 10;
+          ">
+            <div id="filter-buttons" class="btn-group" role="group"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel de Lugares -->
+      <div class="tab-pane fade" id="tab-places">
+        <div class="d-flex justify-content-between mb-2">
+          <h2>Lugares</h2>
+          <button id="add-place-btn" class="btn btn-success">
+            Agregar Lugar
+          </button>
+        </div>
+
+        <div class="text-end mb-3 d-flex gap-2 justify-content-end">
+            <button id="import-db-btn" class="btn btn-outline-secondary">Importar lugares json</button>
+           
+          </div>
+          
+        <div id="place-list" class="table-responsive"></div>
+      </div>
+
+        <!-- Panel de Filtros -->
+<div class="tab-pane fade" id="tab-filters">
+    <div class="d-flex justify-content-between mb-2">
+      <h2>Filtros</h2>
+      <button id="add-filter-btn" class="btn btn-success">
+        Agregar Filtro
+      </button>
+    </div>
+  
+    <div class="text-end mb-3 d-flex gap-2 justify-content-end">
+      <button id="import-filtros-btn" class="btn btn-outline-secondary">Importar filtros json</button>
+    </div>
+  
+    <div id="filter-list" class="table-responsive"></div>
+  </div>
+  
+        <div id="filter-list" class="table-responsive"></div>
+      </div>
+    </div>
+
+    <div class="text-end mt-4">
+      <button id="export-json-btn" class="btn btn-primary">
+        Exportar JSON
+      </button>
+    </div>
+  </main>
+
+  <!-- Modales de Edición (lugar y filtro) -->
+  <!-- Modal Lugar -->
+<div class="modal fade" id="modal-place" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <form id="form-place" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Lugar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="place-id">
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" id="place-nombre" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Descripción</label>
+            <textarea id="place-descripcion" class="form-control"></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Imagen actual</label><br>
+            <img id="place-preview" src="" style="max-width: 100%; max-height: 150px;"><br>
+            <button type="button" class="btn btn-sm btn-secondary mt-2" onclick="document.getElementById('place-imagen').click()">Reemplazar imagen</button>
+            <input type="file" id="place-imagen" accept="image/*" class="d-none">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Video</label>
+            <input type="url" id="place-video" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">URL Información</label>
+            <input type="url" id="place-url_info" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">URL Mapa</label>
+            <input type="url" id="place-url_mapa" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Filtros (IDs, separados por coma)</label>
+            <input type="text" id="place-filtro" class="form-control">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Modal Filtro -->
+  <div class="modal fade" id="modal-filter" tabindex="-1">
+    <div class="modal-dialog">
+      <form id="form-filter" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Filtro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="filter-id">
+          <div class="mb-3">
+            <label class="form-label">Clave</label>
+            <input type="text" id="filter-key" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nombre para mostrar</label>
+            <input type="text" id="filter-displayName" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Imagen actual</label><br>
+            <img id="filter-preview" src="" style="max-width: 100%; max-height: 150px;"><br>
+            <button type="button" class="btn btn-sm btn-secondary mt-2" onclick="document.getElementById('filter-imagen').click()">Reemplazar imagen</button>
+            <input type="file" id="filter-imagen" accept="image/*" class="d-none">
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label class="form-label">Ancho</label>
+              <input type="number" step="any" id="filter-size-x" class="form-control">
+            </div>
+            <div class="col">
+              <label class="form-label">Alto</label>
+              <input type="number" step="any" id="filter-size-y" class="form-control">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label class="form-label">Pos X</label>
+              <input type="number" step="any" id="filter-pos-x" class="form-control">
+            </div>
+            <div class="col">
+              <label class="form-label">Pos Y</label>
+              <input type="number" step="any" id="filter-pos-y" class="form-control">
+            </div>
+            <div class="col">
+              <label class="form-label">Pos Z</label>
+              <input type="number" step="any" id="filter-pos-z" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+          
+        </div>
+          
+      </form>
+    </div>
+  </div>
+  
+
+  <!-- Bootstrap JS bundle (incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Tu lógica de admin -->
+  <script type="module" src="../js/admin.js"></script>
+</body>
 </html>

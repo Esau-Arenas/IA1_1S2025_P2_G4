@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+            "mindar-face-three": "https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-three.prod.js"
+        }
+    }
+    </script>
+    <link rel="stylesheet" href="../css/filtro.css">
+</head>
+<body>
+    <video id="video" autoplay playsinline></video>
+    <button id="back-button" onclick="window.location.href='../index.html'">←</button>
+    
+    <!-- Selector de filtros -->
+    <div id="filter-selector">
+        <h3>Selecciona un filtro</h3>
+        <div id="filter-buttons"></div>
+    </div>
+
+    <script type="module" src="../js/filtro.js"></script>
+</body>
+</html>
