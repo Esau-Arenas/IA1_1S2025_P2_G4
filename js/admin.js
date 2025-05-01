@@ -4,7 +4,7 @@ import { CSS3DRenderer } from "three/addons/renderers/CSS3DRenderer.js";
 import { MindARThree } from "mindar-face-three";
 
 // 0) Si no hay sesión activa, redirige al login
-if (sessionStorage.getItem("adminLoggedIn") !== "true") {
+if (sessionStorage.getItem("adminLoggedIn") !== "true") {https://chatgpt.com/g/g-p-67eb3dde672c81918e22f167076b086c-oscar-morales/c/67f965e4-21d4-8011-8b45-fbbad7a3e735?model=o4-mini-high
   window.location.href = "login.html";
 }
 

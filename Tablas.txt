@@ -1,0 +1,29 @@
+-- Tabla de lugares
+CREATE TABLE IF NOT EXISTS lugares (
+                                       id SERIAL PRIMARY KEY,
+                                       nombre TEXT NOT NULL,
+                                       descripcion TEXT,
+                                       imagen_url TEXT,
+                                       video_url TEXT,
+                                       url_info TEXT,
+                                       url_mapa TEXT
+);
+-- Tabla de filtros
+CREATE TABLE IF NOT EXISTS filtros (
+                                       key TEXT PRIMARY KEY,
+                                       lugar_id INT REFERENCES lugares(id),
+                                       path TEXT,
+                                       size_x NUMERIC,
+                                       size_y NUMERIC,
+                                       pos_x NUMERIC,
+                                       pos_y NUMERIC,
+                                       pos_z NUMERIC,
+                                       display_name TEXT
+);
+
+CREATE TABLE IF NOT EXISTS users (
+  cognito_sub TEXT PRIMARY KEY,
+  email       TEXT NOT NULL,
+  last_sync   TIMESTAMP WITH TIME ZONE DEFAULT now()
+);
+

@@ -1,0 +1,35 @@
+[33mcommit 9a0a49948363cd342ad464966c4439f9c94069e8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: RACSO <racsodraude0@gmail.com>
+Date:   Wed Apr 23 16:29:07 2025 -0600
+
+    [add]: admin
+
+[33mcommit 92037b2b4663c2d048fb8ae212996c24ac706b1a[m
+Author: Moises Conde <moises22c99@gmail.com>
+Date:   Sat Apr 5 23:50:00 2025 -0600
+
+    [add]: manuales
+
+[33mcommit af65238a5c849932a13809b67056abd8813fde1a[m
+Author: Moises Conde <moises22c99@gmail.com>
+Date:   Sat Apr 5 14:32:14 2025 -0600
+
+    add: login
+
+[33mcommit 80d728fb27d7c2f3824b86b63978cc33a40d74e2[m
+Author: Esau-Arenas <earenas665@gmail.com>
+Date:   Fri Apr 4 15:36:37 2025 -0600
+
+    feat(targets): add 14 targets
+
+[33mcommit 9bb2b9f8f014fd69735727996696b567600804ba[m
+Author: Esau-Arenas <earenas665@gmail.com>
+Date:   Fri Apr 4 12:01:04 2025 -0600
+
+    feat(baseMindAr): add index and MindAr
+
+[33mcommit e5916576dbd8e3d5d806fdd9964fbe9468cdbebb[m
+Author: Alvaro Esaú Arenas <98533560+Esau-Arenas@users.noreply.github.com>
+Date:   Wed Apr 2 17:58:45 2025 -0600
+
+    Initial commit
